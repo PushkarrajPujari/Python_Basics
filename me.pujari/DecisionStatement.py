@@ -12,12 +12,14 @@ def unknown():
     print("Sorry I didn't get you can you repeat")
 
 
-switch = {
-    "hi": welcome,
-    "bye": goodbye,
-    "": unknown
-}
+def f1(message):
+    switch = {
+        "hi": welcome,
+        "bye": goodbye,
+        "": unknown
+    }[message]()
+
 
 message = input("Enter your message")
 
-switch[message]()
+f1(message)
