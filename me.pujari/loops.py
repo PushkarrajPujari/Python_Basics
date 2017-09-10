@@ -5,7 +5,18 @@
 # in the order that they appear in the sequence.
 # This description is taken from python docs
 
-listOfWords = ["One", "Two", "Three", "Four", "Five"]
+# If you do need to iterate over a sequence of numbers,
+# the built-in function range() comes in handy. It generates arithmetic progressions:
 
-for word in listOfWords:
-    print(word)
+for i in range(5):
+    print(i)
+
+print("----------------------------------------------------")
+
+for i in range(5, 10):
+    print(i)
+
+print("----------------------------------------------------")
+
+for i in range(0, 10, 2):
+    print(i)
